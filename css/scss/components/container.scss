@@ -1,0 +1,82 @@
+
+.container__titulo {
+    padding-top: 30px;
+    padding-left: 30px;
+    .titulo {
+        font-size: 24px;
+        padding: 10px;
+        display: inline-block;
+    }
+}
+
+main .section{
+    width: 95%;
+    height: 115px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 3px 3px 3px #dddddd;
+    margin: 30px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    &__destinatario{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 2;
+        padding-left: 20px;
+    }
+    &__operacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        padding-left: 20px;
+    }
+    &__tipo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        padding-left: 20px;
+    }
+    &__produto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        padding-left: 20px;
+    }
+}
+
+.label-section {
+    margin: 5px 10px 10px 0;
+    font-weight: 600;
+    color: #333333;
+}
+
+input{
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+.opcoes-select{
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    margin-right: 20px;
+}
+
+.input-date{
+    width: 80%;
+}
+
+.btn {
+    width: 35px;
+    height: 35px;
+    margin: 43px 20px 10px 0;
+    padding: 0;
+    background: $primary-color;
+    border: 1px solid #cccccc;
+}

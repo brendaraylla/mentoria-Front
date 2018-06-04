@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xpress</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="modal">
+        <div class="overlay"></div>
+        <div class="panel">
+            <header class="panel__header">
+                <div class="panel__container">
+                    <p>Atenção</p>
+                    <i class="fa fa-times close-panel" aria-hidden="true"></i>
+                </div>
+            </header>
+            <main class="panel__main">
+                <p>As informações inseridas ou alteradas serão perdidas, deseja realmente sair?</p>
+            </main>
+            <footer class="panel__footer">
+                <button class="btn-no">Não</button>
+                <button class="btn-yes">Sim</button>
+            </footer>
+        </div>
+    </div>
+
+
+    <div class="menu collapsed">
+        <header class="menu__header">
+            <div class="menu__logo">
+                <img src="./images/logo-edig-branco.png" id="menu-logo">
+                <i class="fa fa-bars" aria-hidden="true" id="icon"></i>
+            </div>
+            <div class="menu__empresa">
+                <div class="menu__header-empresa">EMPRESA FICTÍCIA LTDA</div>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div class="menu__header-dropdown">
+                    <label class="empresas">EMPRESA 1</label>
+                    <label class="empresas">EMPRESA 2</label>
+                    <label class="empresas">EMPRESA 3</label>
+                </div>
+            </div>
+        </header>
+        <main class="menu__main">
+            <ul class="menu__group-list">
+                <li class="menu__list"><a href="">Início</a> <i class="fa fa-home icons" aria-hidden="true"></i> </li>
+                <li class="menu__list"><a href="">Emitir NF-e</a> <i class="fa fa-file-code-o" aria-hidden="true"></i> </li>
+                <li class="menu__list"><a href="">Emitir CT-e</a> <i class="fa fa-truck" aria-hidden="true"></i> </li>
+                <li class="menu__list"><a href="">Emitir CC-e para CT-e</a> <i class="fa fa-paper-plane" aria-hidden="true"></i> </li>
+                <li class="menu__list"><a href="">Emitir NFS-e</a> <i class="fa fa-university" aria-hidden="true"></i> </li>
+                <li class="menu__list"><a href="">Smart Doc</a> <i class="fa fa-magic" aria-hidden="true"></i> </li>
+                <li class="menu__list"><a href="">Fast Doc</a> <i class="fa fa-bolt" aria-hidden="true"></i> </li>
+                <li class="menu__list"><a href="">Cadastros</a> <i class="fa fa-plus" aria-hidden="true"></i> </li>
+                <li class="menu__list"><a href="">Relatórios</a> <i class="fa fa-bar-chart" aria-hidden="true"></i> </li>
+                <li class="menu__list"><a href="">Importar</a> <i class="fa fa-upload" aria-hidden="true"></i> </li>
+            </ul>
+        </main>    
+        <footer class="menu__footer">
+            <i class="fa fa-weixin fa-lg" aria-hidden="true"></i>
+            <div class="menu__footer-chat">Chat Online</div>
+            <img src="./images/logo-edig.png" alt="logo">
+        </footer>
+    </div>
+
+
+    <div class="content">
+        <header class="header">
+            <div class="header__usuario">NOME DO USUÁRIO LOGADO</div>
+            <div class="header__end">
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                <div class="header__informacoes">
+                    <div class="header__informacoes-sobre">Sobre</div>
+                    <div class="header__informacoes-ajuda">Ajuda</div>
+                </div>
+                <i class="fa fa-power-off" aria-hidden="true"></i>
+            </div>
+        </header>
+
+        <main>
+            <div class="container__titulo">
+                <img src="./images/logo-edig.png" alt="logo">
+                <h1 class="titulo">EMITIR NOTA FISCAL ELETRÔNICA</h1>
+            </div>
+
+            <section class="section destinatario">
+                <div class="section__destinatario">
+                    <label class="label-section">Adicionar Destinatário</label>
+                    <input class="destinatario" type="text" placeholder="Busque por NOME ou CPF/CNPJ">
+                </div>
+                <button class="btn"><i class="fa fa-level-down" aria-hidden="true"></i></button>
+                <div class="section__operacao">
+                    <label class="label-section">Operação</label>
+                    <select class="opcoes-select" name="" id="">
+                        <option value="">Venda</option>
+                        <option value="">Teste</option>
+                        <option value="">Remessa de Mercadorias</option>
+                    </select>
+                </div>
+                <div class="section__tipo">
+                    <label class="label-section">Tipo</label>
+                    <select class="opcoes-select" name="" id="">
+                        <option value="">Entrada</option>
+                        <option value="">Saída</option>
+                    </select>
+                </div>   
+                             
+                <button class="btn"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                
+            </section>
+
+            <section class="section produto">
+                <div class="section__produto">
+                    <label class="label-section">Adicionar Produtos à Nota Fiscal</label>
+                    <input class="produto" type="text" placeholder="Busque por NOME, CÓDIGO ou CÓDIGO DE BARRAS do Produto">
+                </div>
+                <button class="btn"><i class="fa fa-level-down" aria-hidden="true"></i></button>
+            </section>
+
+            <section class="section__collapse">
+                <div class="collapse__header-dados">
+                    <div class="collapse__title">Dados da Nota</div>
+                    <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="collapse__main-dados">
+                    <div class="collapse__row-dados">
+                        <div class="collapse__col-dados">
+                            <label for="">Data de Emissão</label>
+                            <input class="input-date" type="text" placeholder="dd/mm/aaaa">
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Data de Entrada/Saída</label>
+                            <input class="input-date" type="text" placeholder="dd/mm/aaaa">
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Finalidade</label>
+                            <select class="opcoes-select" name="" id="">
+                                <option value="">NORMAL</option>
+                                <option value="">COMPLEMENTAR</option>
+                                <option value="">AJUSTE</option>
+                                <option value="">DEVOLUÇÃO/RETORNO</option>
+                            </select>
+                        </div>
+                        <div class="collapse__col-dados tipo-venda">
+                            <label for="">Tipo de Venda</label>
+                            <select class="opcoes-select" name="" id="">
+                                <option value="">NÃO SE APLICA</option>
+                                <option value="">OPERAÇÃO NÃO PRESENCIAL, PELA INTERNET</option>
+                                <option value="">OPERAÇÃO NÃO PRESENCIAL, TELEATENDIMENTO</option>
+                                <option value="">OPERAÇÃO NÃO PRESENCIAL, OUTROS</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="collapse__row-dados">
+                        <div class="collapse__col-dados">
+                            <label for="">Total de ICMS</label>
+                            <label for="">R$ 0,20</label>
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Total de ICMS ST</label>
+                            <label for="">R$ 0,00</label>
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Total Cred ICMS</label>
+                            <label for="">R$ 0,00</label>
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Total de PIS</label>
+                            <label for="">R$ 1,18</label>
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Total de II</label>
+                            <label for="">R$ 0,18</label>
+                        </div>
+                    </div>
+                    <div class="collapse__row-dados">
+                        <div class="collapse__col-dados">
+                            <label for="">Total de IPI</label>
+                            <label for="">R$ 5,79</label>
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Total de COFINS</label>
+                            <label for="">R$ 3,17</label>
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Total de Seguro</label>
+                            <label for="">R$ 0,20</label>
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Total de Frete</label>
+                            <label for="">R$ 7,50</label>
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Total de Outras Despesas</label>
+                            <label for="">R$ 0,00</label>
+                        </div>
+                    </div>
+                    <div class="collapse__row-dados">
+                        <div class="collapse__col-dados">
+                            <label for="">Total de FCP</label>
+                            <label for="">R$ 0,05</label>
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Total de ICMS UF Dest</label>
+                            <label for="">R$ 0,00</label>
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Total de ICMS UF Remet</label>
+                            <label for="">R$ 0,72</label>
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Total dos Tributos (IBPT)</label>
+                            <label for="">R$ 1,18</label>
+                        </div>
+                        <div class="collapse__col-dados">
+                            <label for="">Total da Nota</label>
+                            <input type="text" placeholder="R$ ">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section__collapse">
+                <div class="collapse__header-info">
+                    <div class="collapse__title">Outras Informações</div>
+                    <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="collapse__main-info">
+                    <ul class="info-group">
+                        <li class="info"><a href="">Transportadora</a></li>
+                        <li class="info"><a href="">NF Referenciada</a></li>
+                        <li class="info"><a href="">Duplicata</a></li>
+                        <li class="info"><a href="">Exportação de Compras</a></li>
+                        <li class="info"><a href="">Carta de Correção</a></li>
+                        <li class="info"><a href="">Histórico</a></li>
+                        <li class="info info-active"><a href="">Informações Complementares</a></li>
+                    </ul>
+                    <div class="info-complementares">
+                        <div class="row-info-identificador">
+                            <label for="">Identificador</label>
+                            <input type="text" placeholder="AUTOMÁTICO" disabled>
+                        </div>
+                        <div class="row-info-complementares">
+                            <div class="info-complementares-msg">
+                                <label for="">Informações Complementares</label>
+                                <input class="input-informacoes-complementares" type="text" >
+                            </div>
+                            <div class="info-complementares-msg">
+                                <label for="">Mensagem ao Fisco</label>
+                                <input type="text" class="input-informacoes-complementares">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="button-group">
+                <button class="btn btn-voltar"><i class="fa fa-times" aria-hidden="true"></i>VOLTAR</button>
+                <button class="btn btn-salvar"><i class="fa fa-floppy-o" aria-hidden="true"></i>SALVAR</button>
+                <button class="btn btn-emitir"><i class="fa fa-globe" aria-hidden="true"></i>EMITIR NF-e</button>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

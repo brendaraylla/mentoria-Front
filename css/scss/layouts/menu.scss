@@ -1,0 +1,106 @@
+
+.menu {
+    background: $gray-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 270px;
+    transition: width .3s ease;
+    &__header {
+        background: #283747;
+        height: 145px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+        .menu__logo {
+            display: flex;
+            justify-content: space-between;
+            #icon {
+                padding:20px;
+            }
+            #menu-logo {
+                padding: 15px;
+            }
+        }
+        .menu__empresa {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px;
+            position: relative;
+            .menu__header-dropdown{
+                width: 100%;
+                position: absolute;
+                background: #ffffff;
+                top: 100%;
+                display: none;
+                .empresas{
+                    font-size: 11px;
+                    margin: 20px;
+                }
+            }
+            .menu__header-dropdown.active {
+                display: flex;
+                flex-direction: column;    
+            }
+            .menu__header-empresa {
+                color: $font-color;
+                font-size: 11px;
+            }
+        }
+    }
+    &__main{
+        background: $gray-color;
+        .menu__group-list {
+            margin: 0;
+            padding: 0;
+            .menu__list {
+                text-align: left;
+                list-style-type: none;
+                padding: 13px 20px;
+                display: flex;
+                justify-content: space-between;
+                transition: background .3s ease;
+                &:hover {
+                    background: #555555;
+                }
+                &:active {
+                    background: $primary-color;
+                }
+                & a {
+                    color: $font-color;   
+                    font-size: 14px;
+                    margin-left: 15px;
+                    &:link {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    &__footer {
+        background: $primary-color;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .menu__footer-chat {
+            color: $font-color;
+        }
+    }
+    
+    &.collapsed {
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        .menu__header {
+            height: 70px;
+        }
+        .menu__empresa, .menu__footer-chat, .menu__footer img, #menu-logo, a{
+            display: none;
+        }
+    }
+}
+
+i {
+    color: $font-color;
+}
