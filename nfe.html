@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Xpress</title>
+    <title>Nota Fiscal Eletrônica</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -23,8 +23,8 @@
                 <p>As informações inseridas ou alteradas serão perdidas, deseja realmente sair?</p>
             </main>
             <footer class="panel__footer">
-                <button class="btn-no">Não</button>
-                <button class="btn-yes">Sim</button>
+                <button class="panel__footer-ok">Não</button>
+                <button class="panel__footer-cancel">Sim</button>
             </footer>
         </div>
     </div>
@@ -92,6 +92,16 @@
                 <div class="section__destinatario">
                     <label class="label-section">Adicionar Destinatário</label>
                     <input class="destinatario" type="text" placeholder="Busque por NOME ou CPF/CNPJ">
+                    <div class="destinatario__pesquisa">
+                        <ul>
+                            <li>Danilo Oliveira</li>
+                            <li>Jean Souza</li>
+                            <li>Leandro Pelegrin</li>
+                            <li>Dialison</li>
+                            <li>Adriano</li>
+                            <li><i class="fa fa-plus" id="mais" aria-hidden="true"></i>CADASTRAR NOVO DESTINATÁRIO</li>
+                        </ul>
+                    </div>
                 </div>
                 <button class="btn"><i class="fa fa-level-down" aria-hidden="true"></i></button>
                 <div class="section__operacao">

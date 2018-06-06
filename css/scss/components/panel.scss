@@ -4,63 +4,63 @@
     &.active {
         display: block;
     }
-    .overlay{
-        position: fixed;
+}
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.5);
+}
+.panel {
+    background: #ffffff;
+    width: 360px;
+    height: 206px;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    &__header{
         width: 100%;
-        height: 100%;
-        z-index: 1;
-        background: rgba(0,0,0,0.5);
-    }
-    .panel {
-        background: #ffffff;
-        width: 360px;
-        height: 206px;
-        top: 50%;
-        left: 50%;
-        position: fixed;
-        z-index: 2;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        &__header{
+        height: 55px;
+        font-size: 18px;
+        width: 100%;
+        background: #e5e5e5;
+        .panel__container{
             width: 100%;
-            height: 55px;
-            font-size: 18px;
-            width: 100%;
-            background: #e5e5e5;
-            .panel__container{
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0 15px;
-            }
-        }
-        &__main{
             display: flex;
             align-items: center;
-            text-align: center;
-            border-top: 1px solid #cccccc;
-            border-bottom: 1px solid #cccccc;
+            justify-content: space-between;
+            padding: 0 15px;
         }
-        &__footer{
-            display: flex;
-            justify-content: flex-end;
-            padding: 10px;
-            .btn-yes{
-                background: #cccccc;
-                width: 75px;
-                height: 35px;
-                border: 1px solid #555555;
-            }
-            .btn-no{
-                background: $primary-color;
-                width: 75px;
-                height: 35px;
-                border: 1px solid #555555;
-                margin-right: 10px;
-                color: #ffffff;
-            }
+    }
+    &__main{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+    }
+    &__footer{
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        &-cancel{
+            background: #cccccc;
+            width: 75px;
+            height: 35px;
+            border: 1px solid #555555;
+        }
+        &-ok{
+            background: $primary-color;
+            width: 75px;
+            height: 35px;
+            border: 1px solid #555555;
+            margin-right: 10px;
+            color: #ffffff;
         }
     }
 }

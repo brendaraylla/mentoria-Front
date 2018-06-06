@@ -25,3 +25,7 @@ headerCollapseInfo.addEventListener("click", event => mainCollapseInfo.classList
 const menuHamburguer = document.querySelector('.fa-bars');
 const menuCollapse = document.querySelector('.menu');
 menuHamburguer.addEventListener("click", event => menuCollapse.classList.toggle('collapsed'));
+
+const inputDestinatario = document.querySelector(".destinatario");
+const destinatarioPesquisa = document.querySelector(".destinatario__pesquisa");
+inputDestinatario.addEventListener("click", event => destinatarioPesquisa.classList.toggle('active'));
