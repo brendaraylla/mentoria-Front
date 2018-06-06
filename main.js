@@ -29,3 +29,7 @@ menuHamburguer.addEventListener("click", event => menuCollapse.classList.toggle(
 const inputDestinatario = document.querySelector(".destinatario");
 const destinatarioPesquisa = document.querySelector(".destinatario__pesquisa");
 inputDestinatario.addEventListener("click", event => destinatarioPesquisa.classList.toggle('active'));
+
+const inputProduto = document.querySelector(".produto");
+const produtoPesquisa = document.querySelector(".produto__pesquisa");
+inputProduto.addEventListener("click", event => produtoPesquisa.classList.toggle('active'));
